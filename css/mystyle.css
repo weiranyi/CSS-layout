@@ -7,18 +7,40 @@ ul,ol{
   /*消除实心小圆点*/
   list-style:none;
 }
+a{
+  text-decoration : none;
+  color:#FFF;
+}
 .clearfix::after{
   content:" ";
   display:block;
   clear:both;
 }
+.logo{
+  float:left;
+  background: grey;
+  display: inline-block;
+  margin-top:10px;
+  margin-left:10px
+}
+.logo>img{
+  height:30px;
+  /*若图片下有多余的东西，可以使用vertical-align:top/middle;*/
+  vertical-align:middle;
+}
+.nav{
+  float:right;
+  margin-left:20px;
+}
 ul>li{
   float:left;
-  border:1px solid red;
-  padding:0.3em 0.5em;
+  padding:0.5em 0.5em;
+  line-height:32px;
 }
 ul{
-  border:1px solid #000;
   /*尽量压缩自己*/
   display:inline-block;
+}
+header{
+  background:grey;
 }
