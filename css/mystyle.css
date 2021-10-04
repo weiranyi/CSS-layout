@@ -7,6 +7,10 @@ ul,ol{
   /*消除实心小圆点*/
   list-style:none;
 }
+img{
+	/*图片最大宽度不能超过这一行*/
+	max-width: 100%;
+}
 a{
   text-decoration : none;
   color:#FFF;
