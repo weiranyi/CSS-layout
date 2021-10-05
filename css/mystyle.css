@@ -1,92 +1,117 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-ul,ol{
-  /*消除实心小圆点*/
-  list-style:none;
+
+ul,
+ol {
+	/*消除实心小圆点*/
+	list-style: none;
 }
-a{
-  text-decoration : none;
-  color:#FFF;
+img{
+	max-width: 100%;
 }
-.clearfix::after{
-  content:" ";
-  display:block;
-  clear:both;
-}
-.logo{
-  float:left;
-  background: grey;
-  display: inline-block;
-  margin-top:10px;
-  margin-left:10px
-}
-.logo>img{
-  height:30px;
-  /*若图片下有多余的东西，可以使用vertical-align:top/middle;*/
-  vertical-align:middle;
-}
-.nav{
-  float:right;
-  margin-left:20px;
-}
-ul>li{
-  float:left;
-  padding:0.5em 0.5em;
-  line-height:32px;
-}
-ul{
-  /*尽量压缩自己*/
-  display:inline-block;
-}
+
 header{
-  background:grey;
+	display: block;
 }
+
+a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.clearfix::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.logo {
+	float: left;
+	background: grey;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px
+}
+
+.logo>img {
+	height: 30px;
+	/*若图片下有多余的东西，可以使用vertical-align:top/middle;*/
+	vertical-align: middle;
+}
+
+.nav {
+	float: right;
+	margin-left: 20px;
+}
+
+ul>li {
+	float: left;
+	padding: 0.5em 0.5em;
+	line-height: 32px;
+}
+
+ul {
+	/*尽量压缩自己*/
+	display: inline-block;
+}
+
+header {
+	background: grey;
+}
+
 /* outline:border会占用像素，此时调试可以采用outline；或者采用背景色 */
-.content{
+.content {
 	margin-top: 10px;
 }
-.content{
-  width:900px;
-  outline:1px solid red;
-  /*居中
+
+.content {
+	width: 900px;
+	outline: 1px solid red;
+	/*居中
     margin:0 auto;
     推荐写为margin-left/margin-right形式，因为这中写法不会覆盖top、bottom
   */
-  margin-left:auto;
-  margin-right:auto;
+	margin-left: auto;
+	margin-right: auto;
 }
-.content>aside{
-  width:200px;
-  height:300px;
-  background: #999;
-  float: left;
+
+.content>aside {
+	width: 200px;
+	height: 300px;
+	background: #999;
+	float: left;
 }
-.content>main{
-  background: #ccc;
-  width:580px;
-  height:300px;
-  float: left;
-  
+
+.content>main {
+	background: #ccc;
+	width: 580px;
+	height: 300px;
+	float: left;
+
 }
-.content>.ad{
-  width:120px;
-  height:300px;
-  background: #000;
-  float: left;
+
+.content>.ad {
+	width: 120px;
+	height: 300px;
+	background: #000;
+	float: left;
 }
-.imagesList{
+
+.imagesList {
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 }
-.imagesList>.x{
+
+.imagesList>.x {
 	margin-right: -24px;
 }
-.imagesList>.x>.image{
+
+.imagesList>.x>.image {
 	width: 207px;
 	height: 172px;
 	background: #000;
@@ -94,4 +119,5 @@ header{
 	float: left;
 	margin-bottom: 10px;
 	margin-right: 24px;
+
 }
