@@ -77,3 +77,21 @@ header{
   background: #000;
   float: left;
 }
+.imagesList{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+.imagesList>.x{
+	margin-right: -24px;
+}
+.imagesList>.x>.image{
+	width: 207px;
+	height: 172px;
+	background: #000;
+	border: 1px solid red;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 24px;
+}
